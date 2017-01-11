@@ -5,7 +5,7 @@
 
   :dependencies [
 	  [org.clojure/clojure "1.8.0"]
-	  [wit/duckling "0.4.26-SNAPSHOT"]
+	  [wit/duckling "1.0.85-SNAPSHOT"]
 	  [ring/ring-core "1.2.1"]
 	  [ring/ring-jetty-adapter "1.2.1"]
 	  [compojure "1.1.6"]

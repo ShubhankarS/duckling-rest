@@ -32,11 +32,11 @@
 
   "twice"
   #"(?i)twice"
-  {:dim :number :integer true :value 1 :grain 1}
+  {:dim :number :integer true :value 2 :grain 1}
 
   "thrice"
   #"(?i)thrice"
-  {:dim :number :integer true :value 1 :grain 1}
+  {:dim :number :integer true :value 3 :grain 1}
 
   ;end of custom declaration
   

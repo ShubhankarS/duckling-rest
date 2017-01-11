@@ -12,12 +12,17 @@
   "1"
   "one"
   "single"
+  "once"
   (number 1)
 
   "2"
   "two"
   "a pair"
+  "twice"
   (number 2)
+
+  "thrice"
+  (number 3)
 
   "33"
   "thirty three"

@@ -3,7 +3,7 @@
   <groupId>wit</groupId>
   <artifactId>duckling</artifactId>
   <packaging>jar</packaging>
-  <version>0.4.26-SNAPSHOT</version>
+  <version>1.0.85-SNAPSHOT</version>
   <name>duckling</name>
   <description>Date &amp; Number parser</description>
   <url>https://github.com/wit-ai/duckling</url>
