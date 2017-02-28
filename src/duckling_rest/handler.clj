@@ -36,12 +36,19 @@
   (GET "/parse/number/:text" [text] (parse-number text))
   (GET "/parse/ordinal/:text" [text] (parse-ordinal text))
   (GET "/parse/duration/:text" [text] (parse-duration text))
+
+  (POST "/parse/all" {:keys [params]} (let [{:keys [text]} params] (parse-all text)))
+  (POST "/parse/time" {:keys [params]} (let [{:keys [text]} params] (parse-time text)))
+  (POST "/parse/number" {:keys [params]} (let [{:keys [text]} params] (parse-number text)))
+  (POST "/parse/ordinal" {:keys [params]} (let [{:keys [text]} params] (parse-ordinal text)))
+  (POST "/parse/duration" {:keys [params]} (let [{:keys [text]} params] (parse-duration text)))
   (route/not-found "Not Found")
 )
 
 (def app
       (-> (handler/api app-routes)
         (wrap-json-body)
+        (wrap-json-params)
         (wrap-json-response))
 )
 
