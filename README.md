@@ -25,6 +25,7 @@ GET API's:
 	3) GET "/parse/number/:text"
 	4) GET "/parse/ordinal/:text"
 	5) GET "/parse/duration/:text"
+	6) GET "/parse/number-like/:text"
 
 POST API's:
 	
@@ -33,6 +34,7 @@ POST API's:
 	3) POST "/parse/number"
 	4) POST "/parse/ordinal"
 	5) POST "/parse/duration"
+	6) POST "/parse/number-like"
 	
 	with JSON request body as: {text:"text"}
 	
