@@ -2,13 +2,19 @@
   (:gen-class)
   (:use compojure.core ring.middleware.json)
   (:require [compojure.handler :as handler])
-  (:require [duckling.core :as p])
+  (:require
+    [duckling.core :as p]
+    [duckling.time.obj :as time]
+  )
   (:require
   	[compojure.route :as route]
     [ring.adapter.jetty :refer :all]
   )
+  (refer-clojure :exclude [merge partial iterate format print contains? max min])
+  (:use joda-time)
+)
 
-  )
+(def fmt (formatter "yyyy-MM-dd HH:mm:ss:SSSZ" :date-time (formatter :date)))
 
 (defn parse-all [text-to-parse]
   (p/parse :en$core text-to-parse)
@@ -16,6 +22,10 @@
 
 (defn parse-time [text-to-parse]
   (p/parse :en$core text-to-parse [:time])
+)
+
+(defn parse-time-with-reference [text-to-parse, reference-time]
+  (p/parse :en$core text-to-parse [:time] {:reference-time {:start (parse-date-time fmt reference-time) :grain :second}})
 )
 
 (defn parse-number [text-to-parse]
@@ -44,6 +54,7 @@
 
   (POST "/parse/all" {:keys [params]} (let [{:keys [text]} params] (parse-all text)))
   (POST "/parse/time" {:keys [params]} (let [{:keys [text]} params] (parse-time text)))
+  (POST "/parse/time-with-reference" {:keys [params]} (let [{:keys [text, reference-time]} params] (parse-time-with-reference text reference-time)))
   (POST "/parse/number" {:keys [params]} (let [{:keys [text]} params] (parse-number text)))
   (POST "/parse/number-like" {:keys [params]} (let [{:keys [text]} params] (parse-number-like text)))
   (POST "/parse/ordinal" {:keys [params]} (let [{:keys [text]} params] (parse-ordinal text)))

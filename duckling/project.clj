@@ -23,5 +23,4 @@
   :pom-addition [:developers [:developer
                                [:name "Wit.ai"]
                                [:url "https://wit.ai"]
-                               [:email "contact@wit.ai"]
-                               [:timezone "-7"]]])
+                               [:email "contact@wit.ai"]]])
