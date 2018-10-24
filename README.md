@@ -38,3 +38,8 @@ POST API's:
 	
 	with JSON request body as: {text:"text"}
 	
+API for passing reference time for relative parsing:
+
+	1) POST "/parse/time-with-reference"
+
+	with JSON request body as {text:"tomorrow", reference-time: "2018-10-24T11:58:19.000Z"}

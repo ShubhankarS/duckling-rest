@@ -11,6 +11,7 @@
 	  [compojure "1.1.6"]
 	  [ring/ring-json "0.4.0"]
 	  [clj-time "0.12.2"]
+    [clojure.joda-time "0.7.0"]
   ]
 
   :main duckling-rest.handler
