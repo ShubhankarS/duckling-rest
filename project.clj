@@ -1,16 +1,16 @@
 (defproject duckling-rest "0.1.1-SNAPSHOT"
   ; ...project settings...
 
-  :plugins [[lein-ring "0.8.10"]]
+  :plugins [[lein-ring "0.12.6"]]
 
   :dependencies [
 	  [org.clojure/clojure "1.8.0"]
 	  [wit/duckling "1.0.85-SNAPSHOT"]
-	  [ring/ring-core "1.2.1"]
-	  [ring/ring-jetty-adapter "1.2.1"]
-	  [compojure "1.1.6"]
-	  [ring/ring-json "0.4.0"]
-	  [clj-time "0.12.2"]
+	  [ring/ring-core "1.9.5"]
+	  [ring/ring-jetty-adapter "1.9.5"]
+	  [compojure "1.6.3"]
+	  [ring/ring-json "0.5.1"]
+	  [clj-time "0.15.2"]
     [clojure.joda-time "0.7.0"]
   ]
 
