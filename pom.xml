@@ -3,7 +3,7 @@
   <groupId>duckling-rest</groupId>
   <artifactId>duckling-rest</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.1-SNAPSHOT</version>
   <name>duckling-rest</name>
   <description/>
   <build>
@@ -36,7 +36,7 @@
     </repository>
     <repository>
       <id>clojars</id>
-      <url>https://clojars.org/repo/</url>
+      <url>https://repo.clojars.org/</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -57,32 +57,37 @@
     <dependency>
       <groupId>wit</groupId>
       <artifactId>duckling</artifactId>
-      <version>0.4.26-SNAPSHOT</version>
+      <version>1.0.85-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>ring</groupId>
       <artifactId>ring-core</artifactId>
-      <version>1.2.1</version>
+      <version>1.9.5</version>
     </dependency>
     <dependency>
       <groupId>ring</groupId>
       <artifactId>ring-jetty-adapter</artifactId>
-      <version>1.2.1</version>
+      <version>1.9.5</version>
     </dependency>
     <dependency>
       <groupId>compojure</groupId>
       <artifactId>compojure</artifactId>
-      <version>1.1.6</version>
+      <version>1.6.3</version>
     </dependency>
     <dependency>
       <groupId>ring</groupId>
       <artifactId>ring-json</artifactId>
-      <version>0.4.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>clj-time</groupId>
       <artifactId>clj-time</artifactId>
-      <version>0.12.2</version>
+      <version>0.15.2</version>
+    </dependency>
+    <dependency>
+      <groupId>clojure.joda-time</groupId>
+      <artifactId>clojure.joda-time</artifactId>
+      <version>0.7.0</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>

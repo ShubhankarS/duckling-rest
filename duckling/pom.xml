@@ -46,7 +46,7 @@
     </repository>
     <repository>
       <id>clojars</id>
-      <url>https://clojars.org/repo/</url>
+      <url>https://repo.clojars.org/</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -67,22 +67,22 @@
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>tools.nrepl</artifactId>
-      <version>0.2.3</version>
+      <version>0.2.13</version>
     </dependency>
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>tools.logging</artifactId>
-      <version>0.2.6</version>
+      <version>1.2.4</version>
     </dependency>
     <dependency>
       <groupId>clj-time</groupId>
       <artifactId>clj-time</artifactId>
-      <version>0.8.0</version>
+      <version>0.15.2</version>
     </dependency>
     <dependency>
       <groupId>prismatic</groupId>
       <artifactId>plumbing</artifactId>
-      <version>0.5.3</version>
+      <version>0.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.clojure</groupId>
