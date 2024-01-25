@@ -3,9 +3,15 @@
   <groupId>duckling-rest</groupId>
   <artifactId>duckling-rest</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.1-SNAPSHOT</version>
+  <version>0.1.2-SNAPSHOT</version>
   <name>duckling-rest</name>
   <description/>
+  <scm>
+    <url>https://github.com/ShubhankarS/duckling-rest</url>
+    <connection>scm:git:git://github.com/ShubhankarS/duckling-rest.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/ShubhankarS/duckling-rest.git</developerConnection>
+    <tag>9cb5e3cc4f4738642db8272eccb8cdf0eba75d3f</tag>
+  </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test</testSourceDirectory>
@@ -52,12 +58,12 @@
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
-      <version>1.8.0</version>
+      <version>1.11.1</version>
     </dependency>
     <dependency>
       <groupId>wit</groupId>
       <artifactId>duckling</artifactId>
-      <version>1.0.85-SNAPSHOT</version>
+      <version>1.1.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>ring</groupId>

@@ -10,7 +10,7 @@
   	[compojure.route :as route]
     [ring.adapter.jetty :refer :all]
   )
-  (refer-clojure :exclude [merge partial iterate format print contains? max min])
+  (:refer-clojure :exclude [merge partial iterate format print contains? max min])
   (:use joda-time)
 )
 
