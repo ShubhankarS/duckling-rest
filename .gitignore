@@ -1,0 +1,6 @@
+## build files
+duckling/target/*
+!duckling/target/duckling-*.jar
+
+target/*
+!target/duckling-rest-*.jar

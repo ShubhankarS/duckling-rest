@@ -1,4 +1,4 @@
-(defproject wit/duckling "1.1.0-SNAPSHOT"
+(defproject wit/duckling "1.2.0-SNAPSHOT"
   :description "Date & Number parser"
   :license {:url "https://github.com/wit-ai/duckling"
             :comments "see LICENSE"}
@@ -6,9 +6,9 @@
   :plugins [[s3-wagon-private "1.1.2"]
             [lein-midje "3.1.3"]]
   :repl-options {:init-ns duckling.core}
-  :dependencies [[org.clojure/clojure "1.11.1"]
+  :dependencies [[org.clojure/clojure "1.11.4"]
                  [org.clojure/tools.nrepl "0.2.13"]
-                 [org.clojure/tools.logging "1.2.4"]
+                 [org.clojure/tools.logging "1.3.0"]
                  [clj-time "0.15.2"]
                  [prismatic/plumbing "0.6.0"]]
   :deploy-repositories [["clojars" {:creds :gpg}]]
